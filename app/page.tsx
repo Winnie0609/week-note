@@ -11,8 +11,8 @@ export default function Home() {
           Here, I share a glimpse into my world each week.
         </div>
         <div className="font-normal text-sm md:text-normal">
-          Consider this as just a murmur from me, so please don't take it too
-          seriously!
+          Consider this as just a murmur from me, so please don&apos;t take it
+          too seriously!
         </div>
       </div>
 
