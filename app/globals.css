@@ -1,20 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background-color: #f3efea;
+  max-width: 900px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.markdown-content h1 {
+  font-size: 3cm;
+  font-weight: 700;
+  line-height: 7rem;
+  text-transform: uppercase;
+}
+
+.markdown-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-bottom: 16px;
+  margin-top: 35px;
+}
+
+.markdown-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.markdown-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+}
+
+.markdown-content h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.markdown-content h6 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.markdown-content ul {
+  margin: 0 16px 16px 16px;
+  padding-left: 20px;
+}
+
+.markdown-content ul li {
+  margin-bottom: 5px;
+  list-style-type: disc;
+}
+
+.markdown-content ul li ul li {
+  list-style-type: circle;
+}
+
+.markdown-content ol {
+  margin-left: 1.5rem;
+}
+
+.markdown-content ol li {
+  list-style-type: decimal;
+}
+
+.markdown-content hr {
+  border-top: 2px solid #03417d;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.markdown-content blockquote {
+  width: 70%;
+  margin: 20px;
+  border-left: 3px solid #03417d;
+}
+
+.markdown-content blockquote p {
+  margin-left: 10px;
+  color: #6284b4;
+}
+
+.markdown-content a {
+  color: #03417d;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.markdown-content a:hover {
+  font-weight: 500;
+}
+
+.markdown-content a:hover {
+  color: #a51f1f;
+  text-decoration: none;
+}
+
+.markdown-content p {
+  margin-bottom: 10px;
+}
+
+::selection {
+  background: #ebc8c8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /* --foreground-rgb: 255, 255, 255; */
+    /* --background-start-rgb: 0, 0, 0; */
+    /* --background-end-rgb: 0, 0, 0; */
   }
 }
+
+/* @media only screen and (max-width: 1280px) {
+  :root {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
