@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Week note',
-  description: 'Week note by yey',
+  title: 'Weeknotes | Winnie',
+  description: '記錄一些看過的書、看過的電影、喜歡的歌和一些小事。',
 };
 
 export default function RootLayout({
