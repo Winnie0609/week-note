@@ -93,6 +93,7 @@ strong {
 
 .markdown-content blockquote p {
   margin-left: 10px;
+  margin-bottom: 0px;
   color: #6284b4;
 }
 
