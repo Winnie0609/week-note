@@ -89,18 +89,30 @@ strong {
   width: 70%;
   margin: 20px;
   border-left: 3px solid #03417d;
+
+  @media (prefers-color-scheme: dark) {
+    border-left: 3px solid #ebc8c8;
+  }
 }
 
 .markdown-content blockquote p {
   margin-left: 10px;
   margin-bottom: 0px;
   color: #6284b4;
+
+  @media (prefers-color-scheme: dark) {
+    color: #ffa364;
+  }
 }
 
 .markdown-content a {
   color: #03417d;
   text-decoration: underline;
   text-underline-offset: 4px;
+
+  @media (prefers-color-scheme: dark) {
+    color: #FFEBD2;
+  }
 }
 
 .markdown-content a:hover {
@@ -110,6 +122,10 @@ strong {
 .markdown-content a:hover {
   color: #a51f1f;
   text-decoration: none;
+
+  @media (prefers-color-scheme: dark) {
+    color: #ffa364;
+  }
 }
 
 .markdown-content p {
@@ -122,20 +138,13 @@ strong {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --foreground-rgb: 255, 255, 255; */
-    /* --background-start-rgb: 0, 0, 0; */
-    /* --background-end-rgb: 0, 0, 0; */
+    background-color: #273248;
+    color: #ffffff;
+  }
+  ::selection {
+    background: #ffa364;
   }
 }
-
-/* @media only screen and (max-width: 1280px) {
-  :root {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-} */
 
 body {
   color: rgb(var(--foreground-rgb));
