@@ -5,15 +5,15 @@ This is a place where I share my weekly highlights, including the books I've rea
 ## To-Do's
 
 - [ ] Implement multi-language support
-- [ ] Add dark mode
+- [x] Add dark mode
 - [ ] Create an RSS feed
 - [ ] Purchase a domain
 - [ ] Include a viewer counter
 
 ## Change Log
 
-- 2023-07-09
-  - Initial release of the weeknotes repository.
+- 2023-07-17: Apply dark mode.
+- 2023-07-09: Initial release of the weeknotes repository.
 
 ## Acknowledgement
 
