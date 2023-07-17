@@ -51,11 +51,15 @@ const SingleNotePage = async ({ params }: { params: { noteId: string } }) => {
     <div>
       <article>
         <div className="flex items-end mb-5 mt-10">
-          <div className={`mr-2 font-semibold text-primary text-5xl`}>{id}</div>
+          <div
+            className={`mr-2 font-semibold text-primary text-5xl dark:text-white`}
+          >
+            {id}
+          </div>
           <div className="text-xl font-normal ">/ {date}</div>
         </div>
 
-        <hr className="w-full h-1 bg-secondary text-hover border-0 mb-12"></hr>
+        <hr className="w-full h-1 bg-secondary text-hover border-0 mb-12 dark:text-brown dark:bg-brown"></hr>
 
         <div className="markdown-content">
           <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
@@ -65,7 +69,7 @@ const SingleNotePage = async ({ params }: { params: { noteId: string } }) => {
           {isPrevNoteExist && (
             <Link
               href={`/notes/${getPreviousNote()}`}
-              className="flex items-end hover:text-secondary hover:font-medium text-primary"
+              className="flex items-end hover:text-secondary hover:font-medium text-primary dark:hover:text-highlight dark:text-karry dark:hover:text-tangerine"
             >
               ← {getPreviousNote()}
             </Link>
@@ -74,7 +78,7 @@ const SingleNotePage = async ({ params }: { params: { noteId: string } }) => {
           {isNextNoteExist && (
             <Link
               href={`/notes/${getNextNote()}`}
-              className="flex items-end hover:text-secondary hover:font-medium text-primary"
+              className="flex items-end hover:text-secondary hover:font-medium text-primary dark:text-karry dark:hover:text-tangerine"
             >
               {getNextNote()} →
             </Link>
@@ -82,7 +86,7 @@ const SingleNotePage = async ({ params }: { params: { noteId: string } }) => {
 
           <Link
             href="/"
-            className="hover:text-secondary hover:font-medium text-primary"
+            className="hover:text-secondary hover:font-medium text-primary dark:text-karry dark:hover:text-tangerine"
           >
             Home
           </Link>

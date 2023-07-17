@@ -15,7 +15,7 @@ export default function Home() {
         </div>
       </div>
 
-      <hr className="w-full h-1 bg-secondary text-secondary mb-12"></hr>
+      <hr className="w-full h-1 bg-secondary text-secondary mb-12 dark:text-brown dark:bg-brown"></hr>
 
       <NotesItem />
     </main>
