@@ -1,0 +1,5 @@
+---
+index: INDEX_PLACEHOLDER
+title: TITLE_PLACEHOLDER
+date: DATE_PLACEHOLDER
+---
