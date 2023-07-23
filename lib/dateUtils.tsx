@@ -4,3 +4,8 @@ import dayjs from 'dayjs';
 export const formatDate = (date: string) => {
   return dayjs(date).format('DD MMM, YYYY');
 };
+
+// 2023-06-21 -> '2023-06-21 '
+export const formatDateFromDateToString = (date: any) => {
+  return dayjs(date).format('YYYY-MM-DD');
+};

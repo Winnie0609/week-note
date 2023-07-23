@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import { formatDateFromDateToString } from '../lib/dateUtils';
 
 const noteDirectory = path.join(process.cwd(), 'notePosts');
 
@@ -41,7 +42,7 @@ export const getSinglePostContent = async (id: string) => {
   const noteDataWithContent: Note & { contentHtml: string } = {
     id,
     title: matterResult.data.title,
-    date: matterResult.data.date,
+    date: formatDateFromDateToString(matterResult.data.date),
     contentHtml,
   };
 
